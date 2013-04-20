@@ -4,7 +4,7 @@
  <title>blog.jboursiquot.com</title>
  <link href="http://blog.jboursiquot.com/atom.xml" rel="self"/>
  <link href="http://blog.jboursiquot.com"/>
- <updated>2013-04-20T16:03:55-04:00</updated>
+ <updated>2013-04-20T19:49:09-04:00</updated>
  <id>http://blog.jboursiquot.com</id>
  <author>
    <name>Johnny Boursiquot</name>
@@ -18,11 +18,10 @@
    <updated>2013-03-01T00:00:00-05:00</updated>
    <id>http://blog.jboursiquot.com/2013/03/01/coded</id>
    <content type="html">&lt;h3 id='ruby_code'&gt;Ruby Code&lt;/h3&gt;
-
-&lt;p&gt;&lt;code&gt;ruby
-hash = {name: &amp;quot;Johnny Boursiquot&amp;quot;, email: &amp;quot;jboursiquot@gmail.com&amp;quot;}
-puts hash.keys
-&lt;/code&gt;&lt;/p&gt;</content>
+&lt;div&gt;
+  &lt;pre&gt;&lt;code class='ruby'&gt;hash = {name: &amp;quot;Johnny Boursiquot&amp;quot;, email: &amp;quot;jboursiquot@gmail.com&amp;quot;}
+puts hash.keys&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</content>
  </entry>
  
 </feed>
