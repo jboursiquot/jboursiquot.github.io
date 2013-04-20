@@ -1,0 +1,18 @@
+permalink: date
+base_url: http://blog.jboursiquot.com
+feed_url: http://blog.jboursiquot.com/atom.xml
+title: blog.jboursiquot.com
+
+subtitle: Hi, I'm Johnny Boursiquot. I'm a multi-disciplinad software engineer working with various client, server and mobile technologies. Every now and then, I'll make a post here about something interesting or new that I come across. Feel free to reach out over Twitter.
+
+copyright: Copyright © 2013 - Johnny Boursiquot
+
+author:
+  name: Johnny Boursiquot
+  email: jboursiquot@gmail.com
+  github_url: https://github.com/jboursiquot
+  twitter_url: https://twitter.com/jboursiquot
+  linkedin_url: http://www.linkedin.com/in/jboursiquot
+  stackoverflow_url: http://stackoverflow.com/users/1052563/jboursiquot
+  googleplus_url: https://plus.google.com/108276473852641024808/posts
+  web_url: http://jboursiquot.com

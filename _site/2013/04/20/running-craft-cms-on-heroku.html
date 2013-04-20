@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <title>blog.jboursiquot.com - Running Craft CMS on Heroku</title>
+  
+  <meta name="description" content="Steps to deploying the PHP-based Craft CMS (buildwithcraft.com) on Heroku.">
+  
+  <meta name="author" content="Johnny Boursiquot">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/assets/stylesheets/styles.css">
+  <link rel="stylesheet" href="/assets/stylesheets/pygment_trac.css">
+  <link rel="stylesheet" href="/assets/stylesheets/font-awesome.min.css">
+  <!--[if IE 7]>
+    <link rel="stylesheet" href="/assets/stylesheets/font-awesome-ie7.min.css">
+  <![endif]-->
+  <link rel="shortcut icon" href="/favicon.ico">
+
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1><a href="/">blog.jboursiquot.com</a></h1>
+      <p>Hi, I'm Johnny Boursiquot. I'm a multi-disciplinad software engineer working with various client, server and mobile technologies. Every now and then, I'll make a post here about something interesting or new that I come across. Feel free to reach out over Twitter.</p>
+      <p class="view"><i class="icon-twitter"></i> <a href="https://twitter.com/jboursiquot" target="_blank">Twitter</a></p>
+      <p class="view"><i class="icon-github"></i> <a href="https://github.com/jboursiquot" target="_blank">GitHub</a></p>
+      <p class="view"><i class="icon-reorder"></i> <a href="http://stackoverflow.com/users/1052563/jboursiquot" target="_blank">StackOverflow</a></p>
+      <p class="view"><i class="icon-linkedin"></i> <a href="http://www.linkedin.com/in/jboursiquot" target="_blank">LinkedIn</a></p>
+      <p class="view"><i class="icon-google-plus"></i> <a href="https://plus.google.com/108276473852641024808/posts" target="_blank">Google+</a></p>
+      <p class="view"><i class="icon-user"></i> <a
+        href="http://jboursiquot.com" target="_blank">Me</a></p>
+    </header>
+
+
+<section>
+  <h2>Running Craft CMS on Heroku</h2>
+  <p>Steps to deploying the PHP-based Craft CMS (buildwithcraft.com) on Heroku.</p>
+  <p class="post-date">20 Apr 2013</p>
+  <h3 id='risks'>Risks</h3>
+
+<p>Before we begin, note that the Craft team does not officially support this deployment method. You take on the risk of things not working perfectly with current or future versions of the software. That said, this post is as much of a nudge for the Craft team as it is for you, the hacker, to experience the benefits of running this application without having to provision web, application and database servers.</p>
+
+<h3 id='heroku_supports_php'>Heroku Supports PHP?</h3>
+
+<p>Yes, but not by default. While doing some research around this topic, I came across quite a bit of fear and trepidation when it comes to deploying PHP applications on Heroku&#8217;s platform. After digging a bit deeper, I came to understand why the fear exists and am comfortable enough stating that you can run your PHP applications on Heroku without fear, the same way you can run your Ruby, Scala, Clojure, Java and Python applications. The key here lies in Heroku&#8217;s use of &#8220;buildpacks&#8221; which I&#8217;ll discuss in greater detail in another post. For now, we&#8217;ll jump into deploying Craft CMS.</p>
+
+<h3 id='first_things_first'>First Things, First</h3>
+
+<p>&#8230;</p>
+</section>
+
+  <footer>
+    <p><small>Copyright © 2013 - Johnny Boursiquot <br/> Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+  </footer>
+</div>
+
+<script src="/assets/javascripts/scale.fix.js"></script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11255160-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+</body>
+</html>
+

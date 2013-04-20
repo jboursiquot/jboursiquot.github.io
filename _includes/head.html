@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <title>{{ site.title }} - {{ page.title }}</title>
+  {% if page.description %}
+  <meta name="description" content="{{page.description}}">
+  {% else %}
+  <meta name="description" content="{{site.description}}">
+  {% endif %}
+  <meta name="author" content="{{ site.author.name }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/assets/stylesheets/styles.css">
+  <link rel="stylesheet" href="/assets/stylesheets/pygment_trac.css">
+  <link rel="stylesheet" href="/assets/stylesheets/font-awesome.min.css">
+  <!--[if IE 7]>
+    <link rel="stylesheet" href="/assets/stylesheets/font-awesome-ie7.min.css">
+  <![endif]-->
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1><a href="/">{{ site.title }}</a></h1>
+      <p>{{ site.subtitle }}</p>
+      <p class="view"><i class="icon-twitter"></i> <a href="{{ site.author.twitter_url }}" target="_blank">Twitter</a></p>
+      <p class="view"><i class="icon-github"></i> <a href="{{ site.author.github_url }}" target="_blank">GitHub</a></p>
+      <p class="view"><i class="icon-reorder"></i> <a href="{{ site.author.stackoverflow_url }}" target="_blank">StackOverflow</a></p>
+      <p class="view"><i class="icon-linkedin"></i> <a href="{{ site.author.linkedin_url }}" target="_blank">LinkedIn</a></p>
+      <p class="view"><i class="icon-google-plus"></i> <a href="{{ site.author.googleplus_url }}" target="_blank">Google+</a></p>
+      <p class="view"><i class="icon-rss"></i> <a href="{{site.feed_url }}" target="_blank">Subscribe</a></p>
+      <p class="view"><i class="icon-user"></i> <a href="{{site.author.web_url }}" target="_blank">Me</a></p>
+    </header>
