@@ -6,8 +6,18 @@
     <priority>1</priority> 
   </url>
   <url>
-  <loc>http://blog.jboursiquot.com/2013/03/01/coded.html</loc>
-    <lastmod>2013-03-01</lastmod>
+  <loc>http://blog.jboursiquot.com/2012/12/06/bulk-mail-dispatching-from-the-command-line.html</loc>
+    <lastmod>2012-12-06</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+  <loc>http://blog.jboursiquot.com/2012/11/10/transfer-bookmarks-to-kippt.html</loc>
+    <lastmod>2012-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+  <loc>http://blog.jboursiquot.com/2011/12/26/mssql-db-restore-error-media-set-has-2-families.html</loc>
+    <lastmod>2011-12-26</lastmod>
     <changefreq>monthly</changefreq>
   </url>
 </urlset>

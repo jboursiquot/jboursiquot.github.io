@@ -4,7 +4,7 @@
  <title>blog.jboursiquot.com</title>
  <link href="http://blog.jboursiquot.com/atom.xml" rel="self"/>
  <link href="http://blog.jboursiquot.com"/>
- <updated>2013-04-20T19:49:09-04:00</updated>
+ <updated>2013-04-20T23:21:19-04:00</updated>
  <id>http://blog.jboursiquot.com</id>
  <author>
    <name>Johnny Boursiquot</name>
@@ -13,15 +13,59 @@
 
  
  <entry>
-   <title>Coded</title>
-   <link href="http://blog.jboursiquot.com/2013/03/01/coded.html"/>
-   <updated>2013-03-01T00:00:00-05:00</updated>
-   <id>http://blog.jboursiquot.com/2013/03/01/coded</id>
-   <content type="html">&lt;h3 id='ruby_code'&gt;Ruby Code&lt;/h3&gt;
+   <title>Bulk Mail Dispatching from the Command Line</title>
+   <link href="http://blog.jboursiquot.com/2012/12/06/bulk-mail-dispatching-from-the-command-line.html"/>
+   <updated>2012-12-06T00:00:00-05:00</updated>
+   <id>http://blog.jboursiquot.com/2012/12/06/bulk-mail-dispatching-from-the-command-line</id>
+   <content type="html">&lt;p&gt;Maildis supports HTML and plain text templates with merge tags and CSVs for specifying recipients. It relies on SMTP information you provide through your own configuration file. Subject, sender, path to CSV and path to the templates are all configurable through YAML.&lt;/p&gt;
+
+&lt;p&gt;Maildis is distributed as a Ruby Gem and can be found on &lt;a href='https://rubygems.org/gems/maildis' title='maildis | rubygems.org'&gt;rubygems.org&lt;/a&gt;. Usage and documentation are available on &lt;a href='https://github.com/jboursiquot/maildis' title='jboursiquot/maildis'&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Transfering your bookmarks to Kippt</title>
+   <link href="http://blog.jboursiquot.com/2012/11/10/transfer-bookmarks-to-kippt.html"/>
+   <updated>2012-11-10T00:00:00-05:00</updated>
+   <id>http://blog.jboursiquot.com/2012/11/10/transfer-bookmarks-to-kippt</id>
+   <content type="html">&lt;p&gt;If you&amp;#8217;re unfamiliar with &lt;a href='http://kippt.com'&gt;Kippt&lt;/a&gt;, it&amp;#8217;s a next-generation social bookmarking service along the lines of Del.icio.us. It boasts a pretty neat user experience and I&amp;#8217;ve found it to be easy to use, enough so that I switched over from my long-time favorite, &lt;a href='http://instapaper.com'&gt;Instapaper&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;In order to not lose the hundreds of bookmarks I&amp;#8217;ve horded over the years, I exported them from Instapaper as a CSV and began pondering how I was going to feed all of those links into Kippt. I certainly did not want to do this manually and lose hours off of my life in doing so. Instead I created a Ruby gem called &lt;a href='https://rubygems.org/gems/bulkippt' title='bulkippt | rubygems.org'&gt;bulkippt&lt;/a&gt; that reads the CSV and transmits every bookmark to Kippt using their &lt;a href='http://developers.kippt.com/' title='Kippt Developer Documentation and
+Resources'&gt;API&lt;/a&gt;. Documentation for bulkippt is available on &lt;a href='https://github.com/jboursiquot/bulkippt
+&amp;quot;jboursiquot/bulkippt&amp;quot;'&gt;Github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;But wait, there&amp;#8217;s more! While you can certainly use the gem in your web apps, for me the fun was in using it on the command line through a wrapper gem that I also created called &lt;a href='https://rubygems.org/gems/bulkippt-cli' title='bulkippt-cli |
+rubygems.org'&gt;bulkippt-cli&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;To get started, first install the bulkippt-cli gem:&lt;/p&gt;
 &lt;div&gt;
-  &lt;pre&gt;&lt;code class='ruby'&gt;hash = {name: &amp;quot;Johnny Boursiquot&amp;quot;, email: &amp;quot;jboursiquot@gmail.com&amp;quot;}
-puts hash.keys&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;</content>
+  &lt;pre&gt;&lt;code class='bash'&gt;$ gem install bulkippt-cli&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;See the list of tasks you can call on the tool:&lt;/p&gt;
+&lt;div&gt;
+  &lt;pre&gt;&lt;code class='bash'&gt;$ bulkippt-cli help&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Use the &lt;em&gt;submit&lt;/em&gt; task with the path to your CSV and your Kippt creds and the import will start.&lt;/p&gt;
+&lt;div&gt;
+  &lt;pre&gt;&lt;code class='bash'&gt;$ bulkippt submit ~/path/to/my/bookmarks.csv -u kippt_username -t kippt_token&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Speed of transmission will vary based on the size of your CSV and condition of your connection to the internet.&lt;/p&gt;
+
+&lt;p&gt;Documentation for bulkippt-cli is available on &lt;a href='https://github.com/jboursiquot/bulkippt-cli
+&amp;quot;jboursiquot/bulkippt-cli&amp;quot;'&gt;Github&lt;/a&gt;.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>MSSQL DB Restore Error: Media set has 2 families but only 1 are provided</title>
+   <link href="http://blog.jboursiquot.com/2011/12/26/mssql-db-restore-error-media-set-has-2-families.html"/>
+   <updated>2011-12-26T00:00:00-05:00</updated>
+   <id>http://blog.jboursiquot.com/2011/12/26/mssql-db-restore-error-media-set-has-2-families</id>
+   <content type="html">&lt;p&gt;While deploying a Microsoft SQL Server 2008 R2 database, I came across this weird error: &amp;#8220;This media set has 2 media families but only 1 are provided.&amp;#8221;&lt;/p&gt;
+&lt;img alt='MSSQL Database Export Destination' class='post-image' height='163' src='/assets/content-images/mssql-error-12-26-2011.png' width='611' /&gt;
+&lt;p&gt;Searching the net didn&amp;#8217;t really provide an immediate solution but did hint at the fact that the backup device that was used for the database I&amp;#8217;m trying to import specified a couple of locations and not just the 1 I was specifying during import.&lt;/p&gt;
+
+&lt;p&gt;After performing the backup once more, this time making sure to only have just one entry in the Destination of the backup window, things worked as expected when imported on the other server.&lt;/p&gt;
+&lt;img align='middle' alt='MSSQL Database Export Destination' class='post-image' height='188' src='/assets/content-images/mssql-error-12-26-2011-1.png' width='509' /&gt;
+&lt;p&gt;Hopefully this will save someone else some time.&lt;/p&gt;</content>
  </entry>
  
 </feed>

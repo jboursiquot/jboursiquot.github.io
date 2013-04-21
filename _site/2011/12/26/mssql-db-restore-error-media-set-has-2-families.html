@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  <title>blog.jboursiquot.com - All the things</title>
+  <title>blog.jboursiquot.com - MSSQL DB Restore Error: Media set has 2 families but only 1 are provided</title>
   
   <meta name="description" content="">
   
@@ -37,49 +37,30 @@
 
 
 <section>
-  <h2>All the things</h2>
-    
-    <p>
-    <strong><a href="/2012/12/06/bulk-mail-dispatching-from-the-command-line.html">Bulk Mail Dispatching from the Command Line</a></strong> | Recently I was in need of sending a large quantity of emails to a pre-defined list of users. I wanted to do it on the command line–where I do most of my work–but unfortunately couldn’t find anything suitable for my needs so I created one: Maildis. &mdash; Posted <span class='time-ago' id='1354770000' data-seconds='1354770000'>
-								4 months ago
-								</span>
-								<script>
-								document.addEventListener('DOMContentLoaded',function(){
-									if (typeof(update_time_ago) == typeof(Function)) {
-										update_time_ago(1354770000);
-									}
-								});
-								</script>
-    </p>
-  
-    <p>
-    <strong><a href="/2012/11/10/transfer-bookmarks-to-kippt.html">Transfering your bookmarks to Kippt</a></strong> | Don't leave behind all of your bookmarks from other services when you start using Kippt. &mdash; Posted <span class='time-ago' id='1352523600' data-seconds='1352523600'>
-								5 months ago
-								</span>
-								<script>
-								document.addEventListener('DOMContentLoaded',function(){
-									if (typeof(update_time_ago) == typeof(Function)) {
-										update_time_ago(1352523600);
-									}
-								});
-								</script>
-    </p>
-  
-    <p>
-    <strong><a href="/2011/12/26/mssql-db-restore-error-media-set-has-2-families.html">MSSQL DB Restore Error: Media set has 2 families but only 1 are provided</a></strong> |  &mdash; Posted <span class='time-ago' id='1324875600' data-seconds='1324875600'>
-								about a year ago
-								</span>
-								<script>
-								document.addEventListener('DOMContentLoaded',function(){
-									if (typeof(update_time_ago) == typeof(Function)) {
-										update_time_ago(1324875600);
-									}
-								});
-								</script>
-    </p>
-  
-</ul>
+  <h2>MSSQL DB Restore Error: Media set has 2 families but only 1 are provided</h2>
+  <p></p>
+  <!--<p class="post-date">26 Dec 2011</p>-->
+  <p>While deploying a Microsoft SQL Server 2008 R2 database, I came across this weird error: &#8220;This media set has 2 media families but only 1 are provided.&#8221;</p>
+<img alt='MSSQL Database Export Destination' class='post-image' height='163' src='/assets/content-images/mssql-error-12-26-2011.png' width='611' />
+<p>Searching the net didn&#8217;t really provide an immediate solution but did hint at the fact that the backup device that was used for the database I&#8217;m trying to import specified a couple of locations and not just the 1 I was specifying during import.</p>
 
+<p>After performing the backup once more, this time making sure to only have just one entry in the Destination of the backup window, things worked as expected when imported on the other server.</p>
+<img align='middle' alt='MSSQL Database Export Destination' class='post-image' height='188' src='/assets/content-images/mssql-error-12-26-2011-1.png' width='509' />
+<p>Hopefully this will save someone else some time.</p>
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'jboursiquot'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 </section>
 
   <footer>

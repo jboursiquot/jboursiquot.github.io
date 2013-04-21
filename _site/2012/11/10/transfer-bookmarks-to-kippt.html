@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  <title>blog.jboursiquot.com - Coded</title>
+  <title>blog.jboursiquot.com - Transfering your bookmarks to Kippt</title>
   
-  <meta name="description" content="This is a test page to test code highlights">
+  <meta name="description" content="Don't leave behind all of your bookmarks from other services when you start using Kippt.">
   
   <meta name="author" content="Johnny Boursiquot">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -37,14 +37,34 @@
 
 
 <section>
-  <h2>Coded</h2>
-  <p>This is a test page to test code highlights</p>
-  <!--<p class="post-date">01 Mar 2013</p>-->
-  <h3 id='ruby_code'>Ruby Code</h3>
+  <h2>Transfering your bookmarks to Kippt</h2>
+  <p>Don't leave behind all of your bookmarks from other services when you start using Kippt.</p>
+  <!--<p class="post-date">10 Nov 2012</p>-->
+  <p>If you&#8217;re unfamiliar with <a href='http://kippt.com'>Kippt</a>, it&#8217;s a next-generation social bookmarking service along the lines of Del.icio.us. It boasts a pretty neat user experience and I&#8217;ve found it to be easy to use, enough so that I switched over from my long-time favorite, <a href='http://instapaper.com'>Instapaper</a>.</p>
+
+<p>In order to not lose the hundreds of bookmarks I&#8217;ve horded over the years, I exported them from Instapaper as a CSV and began pondering how I was going to feed all of those links into Kippt. I certainly did not want to do this manually and lose hours off of my life in doing so. Instead I created a Ruby gem called <a href='https://rubygems.org/gems/bulkippt' title='bulkippt | rubygems.org'>bulkippt</a> that reads the CSV and transmits every bookmark to Kippt using their <a href='http://developers.kippt.com/' title='Kippt Developer Documentation and
+Resources'>API</a>. Documentation for bulkippt is available on <a href='https://github.com/jboursiquot/bulkippt
+&quot;jboursiquot/bulkippt&quot;'>Github</a>.</p>
+
+<p>But wait, there&#8217;s more! While you can certainly use the gem in your web apps, for me the fun was in using it on the command line through a wrapper gem that I also created called <a href='https://rubygems.org/gems/bulkippt-cli' title='bulkippt-cli |
+rubygems.org'>bulkippt-cli</a>.</p>
+
+<p>To get started, first install the bulkippt-cli gem:</p>
 <div>
-  <pre><code class='ruby'>hash = {name: &quot;Johnny Boursiquot&quot;, email: &quot;jboursiquot@gmail.com&quot;}
-puts hash.keys</code></pre>
+  <pre><code class='bash'>$ gem install bulkippt-cli</code></pre>
 </div>
+<p>See the list of tasks you can call on the tool:</p>
+<div>
+  <pre><code class='bash'>$ bulkippt-cli help</code></pre>
+</div>
+<p>Use the <em>submit</em> task with the path to your CSV and your Kippt creds and the import will start.</p>
+<div>
+  <pre><code class='bash'>$ bulkippt submit ~/path/to/my/bookmarks.csv -u kippt_username -t kippt_token</code></pre>
+</div>
+<p>Speed of transmission will vary based on the size of your CSV and condition of your connection to the internet.</p>
+
+<p>Documentation for bulkippt-cli is available on <a href='https://github.com/jboursiquot/bulkippt-cli
+&quot;jboursiquot/bulkippt-cli&quot;'>Github</a>.</p>
   <div id="disqus_thread"></div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */

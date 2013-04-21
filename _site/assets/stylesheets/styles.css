@@ -95,6 +95,10 @@ img {
   max-width:100%;
 }
 
+.post-image{
+  padding-bottom:20px;
+}
+
 header {
   width:270px;
   float:left;
