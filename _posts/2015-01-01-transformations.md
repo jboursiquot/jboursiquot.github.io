@@ -7,9 +7,9 @@ comments: true
 published: true
 ---
 
-We're at the start of a new year and customarily, many of us will be firmly committing to do or not do certain things this year. You know, resolutions.
+We're at the start of a new year and customarily, many of us will be committing to do or not do certain things during the year.
 
-While I dislike the ritualistic commitments we make at the start of the year (and subsequently struggle to keep), I do hope for several personal transformations this year:
+While I dislike the ritualistic new year’s resolutions we make (and subsequently struggle to keep), I am not immune to the need for self-improvement and do hope for several personal transformations this year:
 
 * Produce more, consume less.
 * Delegate more.
@@ -18,7 +18,7 @@ While I dislike the ritualistic commitments we make at the start of the year (an
 * Give more of my time and self.
 * Lead a more disciplined life.
 
-These are broad in a sense. I’ve thought about what these things ultimately boil down to in terms of my day-to-day. Over the next couple of weeks I’ll elaborate of specific areas of my life that can benefit from each of these principles.
+These are broad in a sense. I’ve been thinking about what these things ultimately boil down to in terms of my day-to-day. Over the next couple of weeks I aim to elaborate on specific areas of my life that can benefit from each of these principles.
 
 If you’ve made some resolutions of your own, I hope you succeed in staying committed to them.
 
