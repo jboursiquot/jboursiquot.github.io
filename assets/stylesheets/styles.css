@@ -107,6 +107,10 @@ img {
   padding-bottom:20px;
 }
 
+.post-description {
+  font-style: italic;
+}
+
 header {
   width:270px;
   float:left;
